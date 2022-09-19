@@ -51,7 +51,7 @@ BOOL WINAPI DllMain(HMODULE hModule, DWORD dwReason, PVOID pvReserved)
     f = open(output,"w")
     f.write(tamplate)
     f.close()
-    print("代码报错完成，请确保编译后的DLL名为:%s" % DllName)
+    print("代码保存完成，请确保编译后的DLL名为:%s" % DllName)
     print("或者使用GCC编译，编译命令如下\n\tgcc %s -lShlwapi -lPsapi -shared -o %s" % (output,target_dll) )
 if len(sys.argv) <= 3:
     useage = """
